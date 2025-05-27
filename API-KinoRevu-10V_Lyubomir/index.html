@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КиноРевю</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>КиноРевю</h1>
+        
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Въведете име на филм">
+            <button id="searchBtn">Търси</button>
+        </div>
+        
+        <div id="errorMessage" class="error-message"></div>
+        
+        <div id="results" class="results-container"></div>
+        
+        <!-- Модален прозорец за детайли на филма -->
+        <div id="movieModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="movieDetails"></div>
+                
+                <!-- Форма за рецензии -->
+                <div class="review-form">
+                    <h3>Добави рецензия</h3>
+                    <form id="reviewForm">
+                        <textarea id="reviewText" placeholder="Вашата рецензия..." required></textarea>
+                        <div class="rating">
+                            <label>Оценка:</label>
+                            <select id="reviewRating" required>
+                                <option value="">Изберете оценка</option>
+                                <option value="1">1 звезда</option>
+                                <option value="2">2 звезди</option>
+                                <option value="3">3 звезди</option>
+                                <option value="4">4 звезди</option>
+                                <option value="5">5 звезди</option>
+                            </select>
+                        </div>
+                        <button type="submit">Изпрати рецензия</button>
+                    </form>
+                </div>
+                
+                <!-- Списък с рецензии -->
+                <div class="reviews-list">
+                    <h3>Рецензии</h3>
+                    <div id="reviewsContainer"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
