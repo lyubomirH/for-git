@@ -1,60 +1,60 @@
-const API_KEY = 'c111d2';                          // моя ключ
-const API_URL = 'https://www.omdbapi.com/';        // сайт който достъваме
+const API_KEY = 'c111d2';                          
+const API_URL = 'https://www.omdbapi.com/';        
 
-const searchInput = document.getElementById('searchInput');            //връзка с различните елементи на сайта 
-const searchBtn = document.getElementById('searchBtn');                //
-const resultsContainer = document.getElementById('results');           //
+const searchInput = document.getElementById('searchInput');             
+const searchBtn = document.getElementById('searchBtn');                
+const resultsContainer = document.getElementById('results');           
 const favoritesContainer = document.getElementById('favorites');       //   f12/Application/Storaga/local storage
-const errorMessage = document.getElementById('errorMessage');          //
+const errorMessage = document.getElementById('errorMessage');          
 
-let favorites = JSON.parse(localStorage.getItem('favorites')) || [];   //създаваме на JSON (НЕ СЕ РАДВАМ ДА ГО ВИДЯ  >:(  )
+let favorites = JSON.parse(localStorage.getItem('favorites')) || [];   
 
-searchBtn.addEventListener('click', searchMovies);                     // създаване на събитие за кликане на бутона на търсачката
-searchInput.addEventListener('keypress', (e) => {                      // Може и с "Enter"
-    if (e.key === 'Enter') {                                           //
-        searchMovies();                                                // 
-    }                                                                  //
-});                                                                    //
+searchBtn.addEventListener('click', searchMovies);                     
+searchInput.addEventListener('keypress', (e) => {                      
+    if (e.key === 'Enter') {                                           
+        searchMovies();                                                 
+    }                                                                  
+});                                                                    
 
-document.addEventListener('DOMContentLoaded', displayFavorites);       // събитие за показване на любими филми (както и се пазят тук)
+document.addEventListener('DOMContentLoaded', displayFavorites);       
 
-async function searchMovies() {                                        // метод за търсене на филм
-    const searchTerm = searchInput.value.trim();                       //
+async function searchMovies() {                                        
+    const searchTerm = searchInput.value.trim();                       
 
-    resultsContainer.innerHTML = '';                                   //
-    hideError();                                                       //
+    resultsContainer.innerHTML = '';                                   
+    hideError();                                                       
                                                                  
-    if (!searchTerm) {                                                 // проверка за проблем 
-        showError('Моля, въведете име на филм за търсене.');           //
-        return;                                                        //
-    }                                                                  //
+    if (!searchTerm) {                                                  
+        showError('Моля, въведете име на филм за търсене.');           
+        return;                                                        
+    }                                                                  
     
-    try {                                                                                                    //
-        const response = await fetch(`${API_URL}?apikey=${API_KEY}&s=${encodeURIComponent(searchTerm)}`);    //достъпваме информация и се
-        const data = await response.json();                                                                  //пригорвяме за грешка 
+    try {                                                                                                    
+        const response = await fetch(`${API_URL}?apikey=${API_KEY}&s=${encodeURIComponent(searchTerm)}`);    
+        const data = await response.json();                                                                   
         
-        if (data.Response === 'True') {                                                                      //
-            displayMovies(data.Search);                                                                      //
-        } else {                                                                                             //
-            showError(data.Error || 'Няма намерени филми. Моля, опитайте с друга заявка.');                  //
-        }                                                                                                    //
-    } catch (error) {                                                                                        //
-        showError('Възникна грешка при извличането на данни. Моля, опитайте отново по-късно.');              //
-        console.error('Error:', error);                                                                      //
-    }                                                                                                        //
+        if (data.Response === 'True') {                                                                      
+            displayMovies(data.Search);                                                                      
+        } else {                                                                                             
+            showError(data.Error || 'Няма намерени филми. Моля, опитайте с друга заявка.');                  
+        }                                                                                                    
+    } catch (error) {                                                                                        
+        showError('Възникна грешка при извличането на данни. Моля, опитайте отново по-късно.');              
+        console.error('Error:', error);                                                                      
+    }                                                                                                        
 }
 
-function displayMovies(movies) {                                                             //
-    movies.forEach(movie => {                                                                //цикъл за създаване на карта за филм
-        const isFavorite = favorites.some(fav => fav.imdbID === movie.imdbID);               //
+function displayMovies(movies) {                                                             
+    movies.forEach(movie => {                                                                
+        const isFavorite = favorites.some(fav => fav.imdbID === movie.imdbID);               
         
-        const movieCard = document.createElement('div');                                     //
-        movieCard.className = 'movie-card';                                                  //
+        const movieCard = document.createElement('div');                                     
+        movieCard.className = 'movie-card';                                                  
         
-        const poster = movie.Poster !== 'N/A'                                                //
-            ? `<img src="${movie.Poster}" alt="${movie.Title}" class="movie-poster">`        //
-            : `<div class="no-poster">Няма налично изображение</div>`;                       //
-                                                                                                        //създаване на карта за филм
+        const poster = movie.Poster !== 'N/A'                                                
+            ? `<img src="${movie.Poster}" alt="${movie.Title}" class="movie-poster">`        
+            : `<div class="no-poster">Няма налично изображение</div>`;                       
+                                                                                                        
         movieCard.innerHTML = `                                                              
             ${poster}
             <div class="movie-details">
@@ -70,15 +70,15 @@ function displayMovies(movies) {                                                
             </div>
         `;
         
-        resultsContainer.appendChild(movieCard);                                            //Добавя филма
+        resultsContainer.appendChild(movieCard);                                            
     });
     
-    document.querySelectorAll('.add-favorite, .remove-favorite').forEach(button => {       // събитие по натискане на бутон любими
+    document.querySelectorAll('.add-favorite, .remove-favorite').forEach(button => {       
         button.addEventListener('click', toggleFavorite);
     });
 }
 
-function toggleFavorite(e) {                                           //имплементация на метода за добавяне към любими 
+function toggleFavorite(e) {                                           
     const button = e.target;
     const imdbID = button.getAttribute('data-id');
     const title = button.getAttribute('data-title');
@@ -103,12 +103,12 @@ function toggleFavorite(e) {                                           //имп�
         button.classList.add('add-favorite');
     }
     
-    localStorage.setItem('favorites', JSON.stringify(favorites));       // добре дошъл в АДА за врори път  (не харсвам JSON)
+    localStorage.setItem('favorites', JSON.stringify(favorites));       
     
-    displayFavorites();                                                //метод за показване на списака с любими 
+    displayFavorites();                                                
 }
 
-function displayFavorites() {                                           //имплементация на метода запоказване на любими
+function displayFavorites() {                                           
     favoritesContainer.innerHTML = '';
     
     if (favorites.length === 0) {
