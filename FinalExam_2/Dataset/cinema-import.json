@@ -1,0 +1,370 @@
+[
+  {
+    "fullName": "Mila Petkova",
+    "nationality": "Bulgaria",
+    "movies": [
+      {
+        "title": "Neon Skyline",
+        "releaseYear": 2021,
+        "durationMinutes": 124,
+        "genre": "Sci-Fi",
+        "viewings": [
+          {
+            "viewerName": "Ivan",
+            "watchedOn": "2025-11-12",
+            "rating": 8
+          },
+          {
+            "viewerName": "Niki",
+            "watchedOn": "2025-12-01",
+            "rating": null
+          }
+        ]
+      },
+      {
+        "title": "Parallel Minds",
+        "releaseYear": 2022,
+        "durationMinutes": 133,
+        "genre": "Sci-Fi",
+        "viewings": [
+          {
+            "viewerName": "Maria",
+            "watchedOn": "2025-04-18",
+            "rating": 9
+          }
+        ]
+      },
+      {
+        "title": "Sofia After Midnight",
+        "releaseYear": 2020,
+        "durationMinutes": 108,
+        "genre": "Thriller",
+        "viewings": [
+          {
+            "viewerName": "Petar",
+            "watchedOn": "2025-10-19",
+            "rating": 7
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "fullName": "Georgi Stoyanov",
+    "nationality": "Bulgaria",
+    "movies": [
+      {
+        "title": "Silent Harbor",
+        "releaseYear": 2019,
+        "durationMinutes": 112,
+        "genre": "Drama",
+        "viewings": [
+          {
+            "viewerName": "Maria",
+            "watchedOn": "2025-10-05",
+            "rating": 7
+          }
+        ]
+      },
+      {
+        "title": "Old Town Letters",
+        "releaseYear": 2017,
+        "durationMinutes": 101,
+        "genre": "Drama",
+        "viewings": [
+          {
+            "viewerName": "Ivan",
+            "watchedOn": "2025-02-14",
+            "rating": 8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "fullName": "Alex Turner",
+    "nationality": "USA",
+    "movies": [
+      {
+        "title": "Crimson Code",
+        "releaseYear": 2022,
+        "durationMinutes": 138,
+        "genre": "Thriller",
+        "viewings": [
+          {
+            "viewerName": "Ivan",
+            "watchedOn": "2025-09-18",
+            "rating": 9
+          },
+          {
+            "viewerName": "Petar",
+            "watchedOn": "2025-10-02",
+            "rating": 8
+          }
+        ]
+      },
+      {
+        "title": "Last Protocol",
+        "releaseYear": 2021,
+        "durationMinutes": 119,
+        "genre": "Action",
+        "viewings": [
+          {
+            "viewerName": "Niki",
+            "watchedOn": "2025-08-21",
+            "rating": 7
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "fullName": "Elena Kovacs",
+    "nationality": "Hungary",
+    "movies": [
+      {
+        "title": "Midnight Algorithm",
+        "releaseYear": 2020,
+        "durationMinutes": 101,
+        "genre": "Sci-Fi",
+        "viewings": [
+          {
+            "viewerName": "Niki",
+            "watchedOn": "2025-08-21",
+            "rating": 7
+          }
+        ]
+      },
+      {
+        "title": "Zero Latitude",
+        "releaseYear": 2018,
+        "durationMinutes": 96,
+        "genre": "Mystery",
+        "viewings": [
+          {
+            "viewerName": "Anna",
+            "watchedOn": "2025-07-11",
+            "rating": 6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "fullName": "Lars Johansson",
+    "nationality": "Sweden",
+    "movies": [
+      {
+        "title": "Broken Signal",
+        "releaseYear": 2018,
+        "durationMinutes": 95,
+        "genre": "Mystery",
+        "viewings": [
+          {
+            "viewerName": "Anna",
+            "watchedOn": "2025-07-11",
+            "rating": 6
+          }
+        ]
+      },
+      {
+        "title": "Northern Buffer",
+        "releaseYear": 2016,
+        "durationMinutes": 104,
+        "genre": "Drama",
+        "viewings": [
+          {
+            "viewerName": "Maria",
+            "watchedOn": "2025-01-28",
+            "rating": 6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "fullName": "Marco Rossi",
+    "nationality": "Italy",
+    "movies": [
+      {
+        "title": "Echoes of Steel",
+        "releaseYear": 2023,
+        "durationMinutes": 142,
+        "genre": "Action",
+        "viewings": [
+          {
+            "viewerName": "Ivan",
+            "watchedOn": "2025-12-15",
+            "rating": 9
+          }
+        ]
+      },
+      {
+        "title": "Glass Horizon",
+        "releaseYear": 2023,
+        "durationMinutes": 145,
+        "genre": "Thriller",
+        "viewings": [
+          {
+            "viewerName": "Ivan",
+            "watchedOn": "2025-12-03",
+            "rating": 8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "fullName": "Sofia Nilsson",
+    "nationality": "Norway",
+    "movies": [
+      {
+        "title": "Winter Letters",
+        "releaseYear": 2017,
+        "durationMinutes": 110,
+        "genre": "Romance",
+        "viewings": [
+          {
+            "viewerName": "Maria",
+            "watchedOn": "2025-02-14",
+            "rating": 8
+          }
+        ]
+      },
+      {
+        "title": "Fjord Stories",
+        "releaseYear": 2015,
+        "durationMinutes": 99,
+        "genre": "Drama",
+        "viewings": [
+          {
+            "viewerName": "Petar",
+            "watchedOn": "2025-03-22",
+            "rating": 7
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "fullName": "Kenji Watanabe",
+    "nationality": "Japan",
+    "movies": [
+      {
+        "title": "Digital Shadows",
+        "releaseYear": 2021,
+        "durationMinutes": 128,
+        "genre": "Sci-Fi",
+        "viewings": [
+          {
+            "viewerName": "Niki",
+            "watchedOn": "2025-06-30",
+            "rating": null
+          }
+        ]
+      },
+      {
+        "title": "Tokyo Static",
+        "releaseYear": 2022,
+        "durationMinutes": 126,
+        "genre": "Sci-Fi",
+        "viewings": [
+          {
+            "viewerName": "Ivan",
+            "watchedOn": "2025-10-19",
+            "rating": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "fullName": "John Miller",
+    "nationality": "USA",
+    "movies": [
+      {
+        "title": "Dust and Silence",
+        "releaseYear": 2016,
+        "durationMinutes": 104,
+        "genre": "Western",
+        "viewings": [
+          {
+            "viewerName": "Petar",
+            "watchedOn": "2025-03-22",
+            "rating": 7
+          }
+        ]
+      },
+      {
+        "title": "Desert Lines",
+        "releaseYear": 2019,
+        "durationMinutes": 118,
+        "genre": "Adventure",
+        "viewings": [
+          {
+            "viewerName": "Ivan",
+            "watchedOn": "2025-01-10",
+            "rating": 8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "fullName": "Paul Renard",
+    "nationality": "France",
+    "movies": [
+      {
+        "title": "Last Transmission",
+        "releaseYear": 2019,
+        "durationMinutes": 97,
+        "genre": "Drama",
+        "viewings": [
+          {
+            "viewerName": "Maria",
+            "watchedOn": "2025-05-09",
+            "rating": 7
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "fullName": "Irina Popescu",
+    "nationality": "Romania",
+    "movies": [
+      {
+        "title": "Hidden Frequencies",
+        "releaseYear": 2018,
+        "durationMinutes": 109,
+        "genre": "Mystery",
+        "viewings": [
+          {
+            "viewerName": "Niki",
+            "watchedOn": "2025-06-01",
+            "rating": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "fullName": "Carlos Mendes",
+    "nationality": "Portugal",
+    "movies": [
+      {
+        "title": "Iron Pulse",
+        "releaseYear": 2021,
+        "durationMinutes": 131,
+        "genre": "Action",
+        "viewings": [
+          {
+            "viewerName": "Petar",
+            "watchedOn": "2025-08-08",
+            "rating": 8
+          }
+        ]
+      }
+    ]
+  }
+]
